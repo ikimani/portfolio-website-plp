@@ -1,0 +1,405 @@
+:root {
+  --bg-dark: #121212;
+  --text-light: #e0e0e0;
+  --accent-pink: #e75480;
+  --hover-pink: #ff85a2;
+  --visited-pink: #fc94af;
+  --link-color: #e75480;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-pink);
+}
+
+ p {
+  color: var(--text-light);
+}
+
+/* NAVBAR*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+
+nav .left a {
+    color: var(--text-light);
+    font-size:22px ;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-light);
+    margin: 0 10px;
+}
+
+/*SECTION 1: Hero*/
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-section .text {
+  flex: 1;
+  max-width: 450px;
+  font-size: 14px;
+}
+
+.hero-section .text h1 {
+  font-size: 32px;
+   color: var(--text-color);
+}
+
+.hero-section .text h2 {
+  font-size: 22px;
+  color: #ff4da6; /* your pink */
+  margin-bottom: 20px;
+}
+
+.hero-section .text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.hero-section .cta-button {
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #ff4da6;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #e64491;
+}
+
+
+.hero-section .headshot {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section .headshot img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* SECTION 2: About Me*/
+#about h1 {
+  text-align: center;
+  color: var(--accent-pink); /* Or use #ff00ff */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1rem; /* Reduce from default */
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#about {
+  padding: 0 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* SECTION 3: Programming Languages*/
+#languages h1 {
+  text-align: center;
+  color: var(--accent-pink);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#languages p {
+font-size: 1rem; /* Reduce from default */
+  line-height: 1.6;
+  text-align: justify;
+}
+ #languages {
+   padding: 0 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.languages p {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  
+}
+
+.lang-logo {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.lang-logo:hover {
+  transform: scale(1.1);
+}
+
+/* SECTION 3: EDUCATION*/
+#education {
+  
+  color: #f5f5f5;
+  padding: 0 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#education h1 {
+  text-align: center;
+  color: var(--accent-pink);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+
+
+#education p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-align: justify;
+
+}
+
+.education-list h2 {
+  color: #ff69b4; /* Your magenta accent */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.education-list ul,
+.education-list ol {
+  
+  margin-bottom: 1.5rem;
+  list-style-position: inside;
+  text-align: justify;
+}
+
+.education-list ol {
+  list-style-type: upper-roman; /* Roman numerals */
+}
+
+.education-list li {
+  background-color: #1a1a1a;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+/*SECTION 5: INTERESTS*/
+#interests h1 {
+  text-align: center;
+  color: var(--accent-pink); /* Or use #ff00ff */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#interests p{
+ font-size: 1rem; /* Reduce from default */
+  line-height: 1.6;
+  text-align: justify; 
+}
+
+#interests {
+  padding: 0 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*SECTION 6: PROJECTS*/
+#projects {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+
+#projects h1 {
+  text-align: center;
+  color: var(--accent-pink); /* Or use #ff00ff */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project {
+  background-color: #1f1f1f;
+  border-left: 4px solid var(--accent-pink);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(231, 84, 128, 0.3);
+}
+
+
+.project h2 {
+  color: #ff69b4; /* Your magenta accent */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.project p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-align: justify;
+
+}
+
+.project-link {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-pink);
+  color: var(--bg-dark);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: var(--hover-pink);
+  box-shadow: 0 0 10px var(--accent-pink);
+}
+
+.project-link:visited {
+  background-color: var(--visited-pink);
+}
+
+#contact {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  text-align: center;
+  color: var(--accent-pink);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  color: var(--text-light);
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #1e1e1e;
+  color: var(--text-light);
+  border: 2px solid var(--accent-pink);
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--hover-pink);
+  box-shadow: 0 0 10px var(--hover-pink);
+}
+
+.contact-form button {
+  background-color: var(--accent-pink);
+  color: #121212;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--hover-pink);
+}
+
+.contact-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact-links a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
